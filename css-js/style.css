@@ -1,0 +1,321 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin:0px;
+   background-image: url("../img/bg.jpg");
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+}
+button{cursor:pointer}
+.container {
+margin-top:-100%;
+  padding: 1px 0;
+  height: 100%;
+  width: 100%;
+  transition:all 2s;
+
+  /*background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/226578/campnou(optimized).jpg");*/
+   
+  color: #fff;
+  font-family: "Comfortaa", "Helvetica", sans-serif;
+  
+  
+  background-image:url("../img/sanayi.png");
+background-size:30%;
+background-repeat:no-repeat;
+background-position:center;
+
+padding-top:100px;
+
+  
+}
+
+.login {
+  width:35%;
+  min-height: 50px;
+  margin: 30px auto;
+  background-color: rgba(10, 10, 10, .68);
+    float: left;
+	height:55vh;
+	min-height:400px;
+	min-width:280px;
+	-webkit-box-shadow: -5px 6px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -5px 6px 5px 0px rgba(0,0,0,0.75);
+box-shadow: -5px 6px 5px 0px rgba(0,0,0,0.75);
+
+-webkit-box-shadow: 0px 2px 9px 6px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 9px 6px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 9px 6px rgba(0,0,0,0.75);
+
+-webkit-box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.75);
+
+
+}
+
+.login-icon-field {
+  height: 250px;
+  width: 100%;
+  /*background-color: red;*/
+}
+
+.login-icon {
+  margin: 50px 65px;
+}
+
+.login-form {
+  padding: 8px 20px 20px;
+  height: 120px;
+  width: 100%;
+  /*background-color: green;*/
+}
+
+.row {
+  display: none;
+}
+
+.username-row {
+  position: relative;
+  height: 40px;
+  /*background-color: pink;*/
+  
+  border-bottom: 1px solid;
+  margin-bottom: 10px;
+}
+
+.password-row {
+  position: relative;
+  height: 40px;
+  /* background-color: grey;*/
+  
+  border-bottom: 1px solid;
+}
+
+.password-icon,
+.user-icon {
+  margin: 5px;
+}
+
+.password-icon .key-path,
+.user-icon .user-path {
+  fill: rgba(10, 10, 10, 0);
+  stroke: #fff;
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  -webkit-animation: dash 3s .3s linear forwards;
+  animation: dash 3s .3s linear forwards;
+}
+
+.user-icon .user-path {
+  -webkit-animation: dash 3s .8s linear forwards;
+  animation: dash 3s .8s linear forwards;
+}
+
+input {
+  position: absolute;
+  width: 195px;
+  height: 30px;
+  margin: 5px 0;
+  background: transparent;
+  border: none;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, .4);
+}
+
+input::-moz-placeholder {
+  color: rgba(255, 255, 255, .4);
+}
+
+.call-to-action {
+  margin: 22px 0;
+  height: 130px;
+  width: 100%;
+  /*background-color: blue;*/
+}
+
+button {
+  display: block;
+  width: 240px;
+  height: 40px;
+  padding: 0;
+  margin: 10px 20px 10px;
+  font-weight: 700;
+  background-color: #22c08a;
+  border: none;
+  border-radius: 20px;
+  transition: background-color .10s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+button:hover {
+  background-color: #26d69a;
+}
+
+button:active {
+  background-color: #1eaa7a;
+}
+
+p {
+  display: inline-block;
+  width: 200px;
+  margin: 0 40px;
+  font-size: .8rem;
+  color: rgba(255, 255, 255, .4);
+  /*background-color: yellow;*/
+}
+
+p a {
+  color: #fff;
+}
+
+label,
+p a:hover {
+  -webkit-cursor: pointer;
+  cursor: pointer;
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+input{
+
+color:#FFF;
+font-family: 'Comfortaa', cursive;
+}
+button
+{
+
+color:#FFF;font-family: 'Comfortaa', cursive;}
+#anacont
+{
+
+width: 85%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+
+}
+
+#sayfa2
+{
+
+background-color:#FFF;
+width:100%;
+height:500px;
+position:absolute;
+transition:all 1s;
+left:100%;
+height:100vh;
+    background-image: url("../img/bg.jpg");
+  background-size: cover;
+}
+#sayfa1
+{
+
+
+
+}
+#logins
+{
+
+transition:all 2s;
+}
+
+
+
+
+#loginformiki
+{
+margin-left:auto;
+margin-right:auto;
+width:280px;
+}
+
+
+#header
+{
+
+background:rgb(51, 51, 51);
+height:100px;
+width:100%;
+top:0;
+transition:all 2s;
+position:absolute;
+z-index:999;
+
+
+-webkit-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.75);
+}
+#yukleme
+{
+position: absolute;
+  top: 50%;
+  left: 50%;
+  background: url('../img/loading.gif');
+  width: 50px;
+  background-size: 70%;
+  height: 50px;
+  background-color: #000000;
+  padding: 30px;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  transition:all 2s;
+  z-index:999;
+
+}
+
+#ropeip
+{
+
+-webkit-box-shadow: 0px -3px 10px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -3px 10px 1px rgba(0,0,0,0.75);
+box-shadow: 0px -3px 10px 1px rgba(0,0,0,0.75);
+
+
+
+}
+
+
+
+
+

